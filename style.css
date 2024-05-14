@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+
+body{
+    background-color: var(--OffBlack);
+    font-family: "Inter", sans-serif;
+}
+
+main{
+    background-color: var(--DarkGrey);
+    margin: 40px auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 15px;
+    gap: 30px;
+    text-align: center;
+}
+
+img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+h1, p, div{
+    color: var(--White);
+}
+
+p,div{
+    font-size: 14px;
+}
+
+.p-span{
+    color: var(--Green);
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.div-background{
+    background-color: var(--Grey);
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.div-background:hover{
+    background-color: var(--Green);
+}
+
+@media (max-width: 1200px){
+    main{
+        width: 40%;
+        padding: 30px;
+    }
+}
